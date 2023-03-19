@@ -472,10 +472,9 @@ GameObject:
   - component: {fileID: 844309099}
   - component: {fileID: 844309098}
   - component: {fileID: 844309097}
-  - component: {fileID: 844309100}
   - component: {fileID: 844309101}
   m_Layer: 0
-  m_Name: "b\u0131\xE7akucu"
+  m_Name: bicakucu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -559,21 +558,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 844309095}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &844309100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844309095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03f8a76f9154f7b4bb75c4e019ba2233, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  knifehandler: {fileID: 303528584}
-  onair: 0
-  triggertrigger: 0
 --- !u!54 &844309101
 Rigidbody:
   m_ObjectHideFlags: 0

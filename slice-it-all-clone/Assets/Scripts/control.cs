@@ -8,9 +8,12 @@ public class control : MonoBehaviour
     public float speedx;
     public GameObject bicakucu;
     public float speedmultiple;
+    public bool playing;
+   
     private void Update()
-    {   
-        if (Input.touchCount > 0)
+    {
+       
+        if (Input.touchCount > 0 &&playing)
         {
             Touch tap = Input.GetTouch(0);
             if (tap.phase == TouchPhase.Began)
@@ -19,6 +22,7 @@ public class control : MonoBehaviour
                 speedx = 1;
             }
         }
+       
     }
     void FixedUpdate()
     {
@@ -28,27 +32,7 @@ public class control : MonoBehaviour
         {
             speedy -= Time.fixedDeltaTime;
         }
-        else
-        {
-            //speedy = speedx = 0; 
-        }
-        /*
-        if (speedy > 0) {
-           
-        }
-        else if (speedy < 0)
-        {
-            speedy += Time.fixedDeltaTime;
-        }
-        if (speedx > 0)
-        {
-            speedx -= Time.fixedDeltaTime;
-        }
-        else if (speedx < 0)
-        {
-            speedx += Time.fixedDeltaTime;
-        }
-        */
-
+        
+       
     }
 }

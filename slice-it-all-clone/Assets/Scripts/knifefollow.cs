@@ -7,6 +7,6 @@ public class knifefollow : MonoBehaviour
     public GameObject knife;
     void FixedUpdate()
     {
-        transform.SetLocalPositionAndRotation(knife.transform.position+new Vector3(-4,5.5f,-8),Quaternion.Euler(30,-325,0));
+        transform.SetLocalPositionAndRotation(knife.transform.position+new Vector3(8,3,-7),Quaternion.Euler(12,-42,0));
     }
 }

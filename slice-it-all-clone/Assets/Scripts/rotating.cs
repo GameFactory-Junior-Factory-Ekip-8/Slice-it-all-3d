@@ -16,27 +16,32 @@ public class rotating : MonoBehaviour
             Touch tap = Input.GetTouch(0);
             if (tap.phase == TouchPhase.Began)
             {
-                rotatespeed = 270;
+                rotatespeed = 480;
                 rotatescalechanging = true;
-                Invoke("starttorotate", 0.15f);
+                Invoke("starttorotate", 0.3f);
             }
         }
-
+        
         if (transform.eulerAngles.z >= 180 && transform.eulerAngles.z <= 270)
         {
             rotatescalechanging = false;
+        }
+        else if (transform.eulerAngles.z >= 90 && transform.eulerAngles.z <= 150)
+        {
+            rotatescalechanging = true;
         }
     }
     private void FixedUpdate()
     {
         if (!rotatescalechanging)
         {
-            rotatespeed -= 360 * Time.fixedDeltaTime;
-            if (rotatespeed < 15)
+            rotatespeed -= 1400 * Time.fixedDeltaTime;
+            if (rotatespeed < 20)
             {
-                rotatespeed = 15;
+                rotatespeed = 20;
             }
         }
+        else { rotatespeed = 480; }
         if (bicakucu.GetComponent<knifefront>().onair)
         {
             transform.Rotate(0, 0, -rotatespeed * Time.fixedDeltaTime);

@@ -41,7 +41,7 @@ public class gamecontrol : MonoBehaviour
         knifefront.GetComponent<knifefront>().onair = false;
         control.GetComponent<control>().speedx = control.GetComponent<control>().speedy = 0;
         control.GetComponent<control>().playing = false;
-        camerafollow.GetComponent<knifefollow>().follow = false;
+        //camerafollow.GetComponent<knifefollow>().follow = false;
         Invoke("openwinscreen", 1);
     }
     public void openwinscreen()
@@ -53,7 +53,7 @@ public class gamecontrol : MonoBehaviour
         knifefront.GetComponent<knifefront>().onair = false;
         control.GetComponent<control>().speedx = control.GetComponent<control>().speedy =0;
         control.GetComponent<control>().playing = false;
-        camerafollow.GetComponent<knifefollow>().follow = false;
+        //camerafollow.GetComponent<knifefollow>().follow = false;
         Invoke("openlosescreen",1);
     }
     public void openlosescreen() {

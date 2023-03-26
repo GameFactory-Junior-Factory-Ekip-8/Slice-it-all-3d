@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 46
+  controlID: 70
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 326
+  controlID: 78
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 64
+  controlID: 79
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\ASUS\Desktop\Slice-it-all-3d-main\slice-it-all-clone
+  m_LastProjectPath: C:\Users\ASUS\Desktop\slice-it-all-clone
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 44720000
-    m_LastClickedID: 29252
-    m_ExpandedIDs: 000000004472000046720000487200004a72000000ca9a3bffffff7f
+    m_SelectedIDs: 80740000
+    m_LastClickedID: 29824
+    m_ExpandedIDs: 000000007474000076740000787400007a74000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004472000046720000487200004a720000
+    m_ExpandedIDs: 000000007474000076740000787400007a740000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -490,7 +490,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 06fbffffb86a0000b46d0000
+      m_ExpandedIDs: 06fbffff746d0000c46e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -558,9 +558,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -141, y: -223.79999}
+      snapOffset: {x: -141, y: 108.20001}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 3
+      snapCorner: 1
       id: unity-grid-and-snap-toolbar
       index: 1
       layout: 1
@@ -569,7 +569,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -772,9 +772,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -5.15555, y: 7.856245, z: -72.80692}
+    m_Target: {x: 7.6526146, y: 9.651417, z: -34.150917}
     speed: 2
-    m_Value: {x: -5.15555, y: 7.856245, z: -72.80692}
+    m_Value: {x: 7.6526146, y: 9.651417, z: -34.150917}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -821,20 +821,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.1520614, y: -0.6352605, z: 0.12939306, w: 0.74612004}
+    m_Target: {x: 0.26720408, y: -0.6560309, z: 0.26854178, w: 0.65288717}
     speed: 2
-    m_Value: {x: 0.15205258, y: -0.6352236, z: 0.12938555, w: 0.7460767}
+    m_Value: {x: 0.2671839, y: -0.6559814, z: 0.26852152, w: 0.65283793}
   m_Size:
-    m_Target: 19.185165
+    m_Target: 5.135312
     speed: 2
-    m_Value: 19.185165
+    m_Value: 5.135312
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 0.94053
-    m_SpeedNormalized: 0.47
+    m_Speed: 1.0005
+    m_SpeedNormalized: 0.5
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -916,7 +916,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 1}
-  m_TargetSize: {x: 1536, y: 2048}
+  m_TargetSize: {x: 1125, y: 2436}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -924,7 +924,7 @@ MonoBehaviour:
   m_UseMipMap: 0
   m_SimulatorState:
     controlPanelVisible: 0
-    controlPanelWidth: NaN
+    controlPanelWidth: 0
     controlPanelFoldoutKeys:
     - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
     controlPanelFoldoutValues: 00
@@ -933,9 +933,9 @@ MonoBehaviour:
     pluginStates:
     - '{}'
     scale: 10
-    fitToScreenEnabled: 1
+    fitToScreenEnabled: 0
     rotationDegree: 0
     highlightSafeAreaEnabled: 0
-    friendlyName: Apple iPad (5th gen)
+    friendlyName: Apple iPhone XS
     networkReachability: 1
     systemLanguage: 10

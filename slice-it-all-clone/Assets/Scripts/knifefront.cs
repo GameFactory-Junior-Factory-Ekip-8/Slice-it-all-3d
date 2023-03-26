@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class knifefront : MonoBehaviour
 {
+    public GameObject rotater;
     public GameObject gamecontrol;
     public GameObject knifehandler;
     public bool onair;
@@ -26,14 +27,15 @@ public class knifefront : MonoBehaviour
             onair = false;
             knifehandler.GetComponent<control>().speedy = knifehandler.GetComponent<control>().speedx = 0;
         }
-        if (other.gameObject.tag == "loseground")
+        if (other.gameObject.tag == "losingground")
         {
             gamecontrol.GetComponent<gamecontrol>().lose();
 
         }
         if (other.gameObject.tag == "CanSlice")
         {
-
+            rotater.GetComponent<rotating>().isrotating = false;
+            vibration.vibrate(10);
             gamecontrol.GetComponent<gamecontrol>().gainedmoney++;
 
 
@@ -49,7 +51,15 @@ public class knifefront : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        onair = true;
+        if (other.gameObject.tag == "CanSlice")
+        {
+            rotater.GetComponent<rotating>().isrotating = true;
+           
+
+
+        }
+        else { onair = true; }
+       
     }
     IEnumerator TriggerControl()
     {

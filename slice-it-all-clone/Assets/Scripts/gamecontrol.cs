@@ -46,6 +46,7 @@ public class gamecontrol : MonoBehaviour
     }
     public void openwinscreen()
     {
+        vibration.vibrate();
         endmoneytext.GetComponent<TextMeshProUGUI>().text ="+" +(gainedmoney * multiple).ToString();
         winscreen.SetActive(true);
     }
@@ -57,6 +58,7 @@ public class gamecontrol : MonoBehaviour
         Invoke("openlosescreen",1);
     }
     public void openlosescreen() {
+        vibration.vibrate();
         losescreen.SetActive(true);
     }
     public void restart() {

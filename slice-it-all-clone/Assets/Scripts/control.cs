@@ -13,7 +13,7 @@ public class control : MonoBehaviour
     private void Update()
     {
        
-        if (Input.touchCount > 0 &&playing)
+        if (Input.touchCount > 0 && playing)
         {
             Touch tap = Input.GetTouch(0);
             if (tap.phase == TouchPhase.Began)

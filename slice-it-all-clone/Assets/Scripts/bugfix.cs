@@ -5,14 +5,13 @@ using UnityEngine.EventSystems;
 
 public class bugfix : MonoBehaviour
 {
-    GameObject control;
+    public GameObject control;
     public GameObject restart;
     public GameObject start;
     public GameObject level;
     public GameObject settings;
     void Update()
     {
-        control = GameObject.Find("Knifehandler");
         if (Input.touchCount>0) {
         if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
         {

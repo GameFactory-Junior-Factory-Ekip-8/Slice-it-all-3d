@@ -19,14 +19,15 @@ public class rotating : MonoBehaviour
                 rotatespeed = 480;
                 rotatescalechanging = true;
                 Invoke("starttorotate", 0.3f);
+                
             }
         }
         
-        if (transform.eulerAngles.z >= 180 && transform.eulerAngles.z <= 270)
+        if (transform.eulerAngles.z >=270 && transform.eulerAngles.z <= 360)
         {
             rotatescalechanging = false;
         }
-        else if (transform.eulerAngles.z >= 90 && transform.eulerAngles.z <= 150)
+        else if (transform.eulerAngles.z <= 90 && transform.eulerAngles.z >= 30)
         {
             rotatescalechanging = true;
         }
@@ -35,16 +36,16 @@ public class rotating : MonoBehaviour
     {
         if (!rotatescalechanging)
         {
-            rotatespeed -= 1400 * Time.fixedDeltaTime;
+            rotatespeed -= 1200 * Time.fixedDeltaTime;
             if (rotatespeed < 20)
             {
                 rotatespeed = 20;
             }
         }
         else { rotatespeed = 480; }
-        if (bicakucu.GetComponent<knifefront>().onair)
+        if (bicakucu.GetComponent<knifefront>().onair&&isrotating)
         {
-            transform.Rotate(0, 0, -rotatespeed * Time.fixedDeltaTime);
+            transform.Rotate(0, 0, rotatespeed * Time.fixedDeltaTime);
         }
     }
     public void starttorotate()

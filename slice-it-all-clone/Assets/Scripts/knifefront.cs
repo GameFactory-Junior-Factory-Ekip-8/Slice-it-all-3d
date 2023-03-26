@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class knifefront : MonoBehaviour
 {
+    public GameObject gamecontrol;
     public GameObject knifehandler;
     public bool onair;
     public bool triggerworking;
@@ -20,12 +21,31 @@ public class knifefront : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "ground"&&triggerworking)
+        if (other.gameObject.tag == "ground" && triggerworking)
         {
             onair = false;
             knifehandler.GetComponent<control>().speedy = knifehandler.GetComponent<control>().speedx = 0;
         }
-        if (other.gameObject.tag == "losingground") { }
+        if (other.gameObject.tag == "loseground")
+        {
+            gamecontrol.GetComponent<gamecontrol>().lose();
+
+        }
+        if (other.gameObject.tag == "CanSlice")
+        {
+
+            gamecontrol.GetComponent<gamecontrol>().gainedmoney++;
+
+
+        }
+        if (other.gameObject.tag == "Finish")
+        {
+            gamecontrol.GetComponent<gamecontrol>().multiple = other.gameObject.GetComponent<multiplenumber>().number;
+
+
+
+            gamecontrol.GetComponent<gamecontrol>().win();
+        }
     }
     private void OnTriggerExit(Collider other)
     {

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ground
   - CanSlice
+  - losingground
   layers:
   - Default
   - TransparentFX

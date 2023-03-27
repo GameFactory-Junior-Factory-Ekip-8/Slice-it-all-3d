@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class knifefront : MonoBehaviour
 {
+    public GameObject settings;
     public GameObject rotater;
     public GameObject gamecontrol;
     public GameObject knifehandler;
@@ -34,8 +35,9 @@ public class knifefront : MonoBehaviour
         }
         if (other.gameObject.tag == "CanSlice")
         {
-            rotater.GetComponent<rotating>().isrotating = false;
-            vibration.vibrate(10);
+            //rotater.GetComponent<rotating>().isrotating = false;
+            if (settings.GetComponent<settings>().vibration) {vibration.vibrate(10); }
+            
             gamecontrol.GetComponent<gamecontrol>().gainedmoney++;
 
 
@@ -54,9 +56,7 @@ public class knifefront : MonoBehaviour
         if (other.gameObject.tag == "CanSlice")
         {
             rotater.GetComponent<rotating>().isrotating = true;
-           
-
-
+            onair = true;
         }
         else { onair = true; }
        
@@ -67,4 +67,5 @@ public class knifefront : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.5f);
         triggerworking = true;
     }
+    
 }

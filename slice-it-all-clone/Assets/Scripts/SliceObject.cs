@@ -18,7 +18,10 @@ public class SliceObject : MonoBehaviour
     {
         if (other.gameObject.CompareTag("CanSlice"))
         {
+            
+            other.gameObject.tag = "Untagged";
             randomnumberforcolor = Random.Range(0, 5);
+
             SlicedHull sliceObj = Slice(other.gameObject, materialSlicedSide[randomnumberforcolor]);
             GameObject SlicedObjTop = sliceObj.CreateUpperHull(other.gameObject, materialSlicedSide[randomnumberforcolor]);
             GameObject SliceObjDown = sliceObj.CreateLowerHull(other.gameObject, materialSlicedSide[randomnumberforcolor]);
@@ -32,14 +35,19 @@ public class SliceObject : MonoBehaviour
     {
         return obj.Slice(transform.position, transform.up, mat);
     }
+    void slice()
+    {
 
+
+
+    }
     void AddComponent(GameObject obj)
     {
+        obj.gameObject.tag = "Untagged";
         obj.AddComponent<BoxCollider>();
         var rigidbody = obj.AddComponent<Rigidbody>();
-        rigidbody.useGravity= gravity;
-        rigidbody.isKinematic= kinematic;
+        rigidbody.useGravity= true;
+        rigidbody.isKinematic= false;
         rigidbody.AddExplosionForce(explosionForce,obj.transform.position,explosionRadius);
-        obj.tag = "CanSlice";
     }
 }

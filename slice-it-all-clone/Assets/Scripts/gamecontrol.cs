@@ -13,6 +13,7 @@ public class gamecontrol : MonoBehaviour
     public GameObject moneytext;
     public GameObject endmoneytext;
     public GameObject nextlevelbutton;
+    public GameObject settings;
     [Header("money")]
     public float savedmoney;
     public float gainedmoney;
@@ -46,7 +47,8 @@ public class gamecontrol : MonoBehaviour
     }
     public void openwinscreen()
     {
-        vibration.vibrate();
+        if (settings.GetComponent<settings>().vibration) {vibration.vibrate(); }
+            
         endmoneytext.GetComponent<TextMeshProUGUI>().text ="+" +(gainedmoney * multiple).ToString();
         winscreen.SetActive(true);
     }
@@ -58,7 +60,8 @@ public class gamecontrol : MonoBehaviour
         Invoke("openlosescreen",1);
     }
     public void openlosescreen() {
-        vibration.vibrate();
+        if (settings.GetComponent<settings>().vibration) {vibration.vibrate(); }
+            
         losescreen.SetActive(true);
     }
     public void restart() {

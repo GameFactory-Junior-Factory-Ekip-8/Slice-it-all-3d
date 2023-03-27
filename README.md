@@ -35,7 +35,7 @@
 <div align="center">
 
   <p align="center">
-    👨‍💻 This is the first assignment of Junior Factory. 👨‍💻
+    👨‍💻 This is the first assignment of Junior Factory. Export link = https://drive.google.com/drive/folders/1_6paLadINUXcWlRnOyy9eYHmsatDIuac?usp=share_link👨‍💻
     <br />
     <a href="https://github.com/GameFactory-Junior-Factory-Ekip-9/Slice-it-all-3d"><strong>Explore the docs »</strong></a>
     <br />

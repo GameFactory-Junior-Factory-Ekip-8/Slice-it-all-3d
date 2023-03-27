@@ -47,7 +47,6 @@ public class gamecontrol : MonoBehaviour
     }
     public void openwinscreen()
     {
-        if (settings.GetComponent<settings>().vibration) {vibration.vibrate(); }
             
         endmoneytext.GetComponent<TextMeshProUGUI>().text ="+" +(gainedmoney * multiple).ToString();
         winscreen.SetActive(true);
@@ -60,7 +59,6 @@ public class gamecontrol : MonoBehaviour
         Invoke("openlosescreen",1);
     }
     public void openlosescreen() {
-        if (settings.GetComponent<settings>().vibration) {vibration.vibrate(); }
             
         losescreen.SetActive(true);
     }
@@ -77,7 +75,7 @@ public void nextlevel() {
 
             endmoneytext.GetComponent<TextMeshProUGUI>().text = "+" + ((gainedmoney * multiple)-i).ToString();
             moneytext.GetComponent<TextMeshProUGUI>().text = "$ " + ((savedmoney + gainedmoney)+i).ToString();
-            yield return new WaitForSecondsRealtime(0.0025f);
+            yield return new WaitForSecondsRealtime(0.0005f);
         }
         yield return new WaitForSecondsRealtime(2);
         PlayerPrefs.SetFloat("savedmoney",savedmoney+(gainedmoney*multiple));

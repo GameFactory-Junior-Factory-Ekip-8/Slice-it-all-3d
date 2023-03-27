@@ -3347,7 +3347,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 417854790}
-  - component: {fileID: 417854791}
   - component: {fileID: 417854792}
   m_Layer: 0
   m_Name: Player
@@ -3372,18 +3371,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 12, y: -42, z: -0}
---- !u!114 &417854791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 417854789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d68daed1ac18d2541920e9d01f58c629, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &417854792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16588,7 +16575,6 @@ GameObject:
   - component: {fileID: 1445747711}
   - component: {fileID: 1445747710}
   - component: {fileID: 1445747709}
-  - component: {fileID: 1445747708}
   - component: {fileID: 1445747707}
   m_Layer: 5
   m_Name: SettingsIcon
@@ -16614,18 +16600,6 @@ MonoBehaviour:
   start: {fileID: 1271891134}
   level: {fileID: 1126874328}
   settings: {fileID: 1445747706}
---- !u!114 &1445747708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1445747706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233a944ef835ba499a58b865d9091a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1445747709
 MonoBehaviour:
   m_ObjectHideFlags: 0

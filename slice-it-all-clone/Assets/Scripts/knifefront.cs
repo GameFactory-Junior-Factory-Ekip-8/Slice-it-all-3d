@@ -35,8 +35,6 @@ public class knifefront : MonoBehaviour
         }
         if (other.gameObject.tag == "CanSlice")
         {
-            //rotater.GetComponent<rotating>().isrotating = false;
-            if (settings.GetComponent<settings>().vibration) {vibration.vibrate(10); }
             
             gamecontrol.GetComponent<gamecontrol>().gainedmoney++;
 
